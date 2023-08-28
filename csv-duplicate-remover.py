@@ -15,5 +15,8 @@ def main():
     # Output duplicates removed to new CSV
     df.to_csv("duplicates_removed.csv", index=False)
 
+    # Close the CSV file
+    file.close()
+
 if __name__ == "__main__":
     main()
